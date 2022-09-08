@@ -1,0 +1,58 @@
+
+/* style="background-color: rgb(117, 225, 48); color: rgb(117, 225, 48)" */
+@mixin greenWeno {
+      color: rgb(117,225,48);
+      background-color: rgb(117,225,48);
+}
+      
+/* style="background-color: rgb(62, 128, 27); color: rgb(62, 128, 27)" */
+@mixin greenMalote{
+      color: rgb(62, 128, 27);
+      background-color: rgb(62, 128, 27);
+}
+
+/* style="color: #ffc107" */
+@mixin colorOrange{
+      color: #ffc107;
+}
+
+/* style="color: #dc3545" */
+@mixin colorRed{
+      color: #dc3545;
+}
+
+/* style="color: white */
+
+@mixin colorWhite{
+      color: white;
+}
+
+/* style="background-color: purple; color: purple" */
+@mixin purpleDecenton{
+      background-color: purple;
+      color: purple;
+}
+
+.greenWeno{
+      @include greenWeno;
+}
+
+.greenMalote{
+      @include greenMalote;
+}
+
+.colorOrange{
+      @include colorOrange;
+}
+
+.colorRed{
+      @include colorRed;
+}
+
+.colorWhite{
+      @include colorWhite;
+}
+
+.purpleDecenton{
+      @include purpleDecenton;
+}

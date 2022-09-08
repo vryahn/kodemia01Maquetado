@@ -1,0 +1,32 @@
+/* style="background-color: rgb(117, 225, 48); color: rgb(117, 225, 48)" */
+/* style="background-color: rgb(62, 128, 27); color: rgb(62, 128, 27)" */
+/* style="color: #ffc107" */
+/* style="color: #dc3545" */
+/* style="color: white */
+/* style="background-color: purple; color: purple" */
+.greenWeno {
+  color: rgb(117, 225, 48);
+  background-color: rgb(117, 225, 48);
+}
+
+.greenMalote {
+  color: rgb(62, 128, 27);
+  background-color: rgb(62, 128, 27);
+}
+
+.colorOrange {
+  color: #ffc107;
+}
+
+.colorRed {
+  color: #dc3545;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.purpleDecenton {
+  background-color: purple;
+  color: purple;
+}/*# sourceMappingURL=styles.css.map */
