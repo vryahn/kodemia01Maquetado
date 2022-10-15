@@ -1,0 +1,33 @@
+#contenido {
+  background-color: #FFFFFF;
+}
+
+footer {
+  background-color: #E5E5E5;
+}
+
+.coso {
+  width: 17px;
+  height: 17px;
+  margin-left: 3px;
+  margin-right: 6px;
+}
+
+#wa_img {
+  width: 100%;
+}
+
+#logoDev {
+  width: 50px;
+  height: 40px;
+}
+
+#imgPerfil {
+  width: 30x;
+  height: 30px;
+  border-radius: 150px;
+}
+
+#imgProfile {
+  width: 500px;
+}/*# sourceMappingURL=styles.css.map */

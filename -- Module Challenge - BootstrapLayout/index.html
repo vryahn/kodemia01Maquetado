@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEV Community</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <!-- Nav bar -->
+  <header>
+    <ul class="nav nav-pills d-flex justify-content-between">
+      <div class="d-flex">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#"
+            ><img
+              id="logoDev"
+              src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <nav class="navbar">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-primary" type="submit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </nav>
+        </li>
+      </div>
+
+      <div class="d-flex">
+        <li class="nav-item mx-1">
+          <button class="mt-2 btn btn-outline-primary fw-bold" type="submit">
+            Create Post
+          </button>
+        </li>
+        <li class="nav-item ms-2">
+          <button class="mt-2 btn btn-outline-primary" type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-bell"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="mt-1 nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            ><img id="imgPerfil" src="./assets/perfil.jpg" alt=""
+          /></a>
+          <ul class="dropdown-menu" id="menuProfile">
+            <li>
+              <button
+                type="button"
+                class="dropdown-item text-start btn btn-primary"
+              >
+                <p>Bryan Rodriguez</p>
+                <p>@vryahn</p>
+              </button>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <button
+                type="button"
+                class="dropdown-item text-start btn btn-primary"
+              >
+                Dashboard
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="dropdown-item text-start btn btn-primary"
+              >
+                Create Post
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="dropdown-item text-start btn btn-primary"
+              >
+                Reaging List
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="dropdown-item text-start btn btn-primary"
+              >
+                Settings
+              </button>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <button
+                type="button"
+                class="dropdown-item text-start btn btn-primary"
+              >
+                Sign Out
+              </button>
+            </li>
+          </ul>
+        </li>
+      </div>
+
+      <li class="nav-item"></li>
+    </ul>
+  </header>
+  <body>
+    <section
+      id="contenido"
+      class="container-fluid d-flex justify-content-between mt-3"
+    >
+      <!-- Left Aside -->
+      <aside class="col-3 border">
+        <div
+          class="card btn-group-vertical"
+          role="group"
+          aria-label="Vertical button group"
+        >
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <g class="nc-icon-wrapper">
+                <path
+                  fill="#A0041E"
+                  d="M13.344 18.702h-2a.5.5 0 01-.5-.5v-7a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v7a.5.5 0 01-.5.5z"
+                ></path>
+                <path fill="#FFE8B6" d="M9 20L22 7l13 13v17H9z"></path>
+                <path fill="#FFCC4D" d="M22 20h1v16h-1z"></path>
+                <path
+                  fill="#66757F"
+                  d="M35 21a.997.997 0 01-.707-.293L22 8.414 9.707 20.707a1 1 0 11-1.414-1.414l13-13a.999.999 0 011.414 0l13 13A.999.999 0 0135 21z"
+                ></path>
+                <path
+                  fill="#66757F"
+                  d="M22 21a.999.999 0 01-.707-1.707l6.5-6.5a1 1 0 111.414 1.414l-6.5 6.5A.997.997 0 0122 21z"
+                ></path>
+                <path fill="#C1694F" d="M14 30h4v6h-4z"></path>
+                <path
+                  fill="#55ACEE"
+                  d="M14 21h4v4h-4zm12.5 0h4v4h-4zm0 9h4v4h-4z"
+                ></path>
+                <path
+                  fill="#5C913B"
+                  d="M37.5 37.5A1.5 1.5 0 0136 39H8a1.5 1.5 0 010-3h28a1.5 1.5 0 011.5 1.5z"
+                ></path>
+              </g>
+            </svg>
+            Home
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <g class="nc-icon-wrapper">
+                <path
+                  fill="#67757F"
+                  d="M39 24c0 2.209-1.791 2-4 2H9c-2.209 0-4 .209-4-2l2-12c.125-1.917 1.791-4 4-4h22c2.209 0 3.791 2.208 4 4l2 12z"
+                ></path>
+                <path
+                  fill="#CCD6DD"
+                  d="M32 17a2 2 0 01-2 2H14a2 2 0 01-2-2V9a2 2 0 012-2h16a2 2 0 012 2v8z"
+                ></path>
+                <path
+                  fill="#E1E8ED"
+                  d="M34 21a2 2 0 01-2 2H12a2 2 0 01-2-2v-8a2 2 0 012-2h20a2 2 0 012 2v8z"
+                ></path>
+                <path
+                  fill="#F5F8FA"
+                  d="M36 25a2 2 0 01-2 2H10a2 2 0 01-2-2v-8a2 2 0 012-2h24a2 2 0 012 2v8z"
+                ></path>
+                <path
+                  fill="#9AAAB4"
+                  d="M39 35a4 4 0 01-4 4H9a4 4 0 01-4-4V24a4 4 0 014-4h26a4 4 0 014 4v11z"
+                ></path>
+                <path fill="#67757F" d="M18 16zm0 0z"></path>
+                <path
+                  fill="#FCAB40"
+                  d="M26 5h-5a2 2 0 00-2 2v1h4a2 2 0 012 2h1a2 2 0 002-2V7a2 2 0 00-2-2z"
+                ></path>
+                <path
+                  fill="#5DADEC"
+                  d="M22 9h-5a2 2 0 00-2 2v1h4a2 2 0 012 2h1a2 2 0 002-2v-1a2 2 0 00-2-2z"
+                ></path>
+                <path
+                  fill="#E75A70"
+                  d="M20 16a2 2 0 01-2 2h-5a2 2 0 01-2-2v-1a2 2 0 012-2h5a2 2 0 012 2v1z"
+                ></path>
+                <path
+                  fill="#67757F"
+                  d="M29 32a2 2 0 01-2 2H17a2 2 0 01-2-2v-5a2 2 0 012-2h10a2 2 0 012 2v5zm-11-4z"
+                ></path>
+                <path
+                  fill="#E1E8ED"
+                  d="M27 31a1 1 0 01-1 1h-8a1 1 0 01-1-1v-3a1 1 0 011-1h8a1 1 0 011 1v3z"
+                ></path>
+              </g>
+            </svg>
+            Reading List
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <g class="nc-icon-wrapper">
+                <path
+                  fill="#FFD983"
+                  d="M36 4H14a4 4 0 00-4 4v24H8a4 4 0 000 8h24a4 4 0 004-4V12a4 4 0 000-8z"
+                ></path>
+                <path fill="#E39F3D" d="M12 14h24v-2H14l-2-1z"></path>
+                <path
+                  fill="#FFE8B6"
+                  d="M14 4a4 4 0 00-4 4v24.555A3.955 3.955 0 008 32a4 4 0 104 4V11.445c.59.344 1.268.555 2 .555a4 4 0 000-8z"
+                ></path>
+                <path
+                  fill="#C1694F"
+                  d="M16 8a2 2 0 11-4.001-.001A2 2 0 0116 8m-6 28a2 2 0 11-4.001-.001A2 2 0 0110 36m24-17a1 1 0 01-1 1H15a1 1 0 010-2h18a1 1 0 011 1m0 4a1 1 0 01-1 1H15a1 1 0 110-2h18a1 1 0 011 1m0 4a1 1 0 01-1 1H15a1 1 0 110-2h18a1 1 0 011 1m0 4a1 1 0 01-1 1H15a1 1 0 110-2h18a1 1 0 011 1"
+                ></path>
+              </g>
+            </svg>
+            Listings
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <g class="nc-icon-wrapper">
+                <path
+                  fill="#292F33"
+                  d="M10 19h24v2H10zm15 15c0 2.208-.792 4-3 4-2.209 0-3-1.792-3-4s.791-2 3-2c2.208 0 3-.208 3 2z"
+                ></path>
+                <path
+                  fill="#66757F"
+                  d="M22 35c-6.627 0-10 1.343-10 3v2h20v-2c0-1.657-3.373-3-10-3z"
+                ></path>
+                <path
+                  fill="#99AAB5"
+                  d="M22 4a9 9 0 00-9 9v7h18v-7a9 9 0 00-9-9z"
+                ></path>
+                <g fill="#292F33" transform="translate(4 4)">
+                  <circle cx="15.5" cy="2.5" r="1.5"></circle>
+                  <circle cx="20.5" cy="2.5" r="1.5"></circle>
+                  <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                  <circle cx="22.5" cy="6.5" r="1.5"></circle>
+                  <circle cx="12.5" cy="6.5" r="1.5"></circle>
+                  <circle cx="15.5" cy="10.5" r="1.5"></circle>
+                  <circle cx="10.5" cy="10.5" r="1.5"></circle>
+                  <circle cx="20.5" cy="10.5" r="1.5"></circle>
+                  <circle cx="25.5" cy="10.5" r="1.5"></circle>
+                  <circle cx="17.5" cy="14.5" r="1.5"></circle>
+                  <circle cx="22.5" cy="14.5" r="1.5"></circle>
+                  <circle cx="12.5" cy="14.5" r="1.5"></circle>
+                </g>
+                <path
+                  fill="#66757F"
+                  d="M13 19.062V21c0 4.971 4.029 9 9 9s9-4.029 9-9v-1.938H13z"
+                ></path>
+                <path
+                  fill="#66757F"
+                  d="M34 18a1 1 0 00-1 1v2c0 6.074-4.925 11-11 11s-11-4.926-11-11v-2a1 1 0 00-2 0v2c0 7.18 5.82 13 13 13s13-5.82 13-13v-2a1 1 0 00-1-1z"
+                ></path>
+              </g>
+            </svg>
+            Podcast
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <g transform="translate(4 4)">
+                <path
+                  fill="#31373D"
+                  d="M34.074 18l-4.832 3H28v-4c0-.088-.02-.169-.026-.256C31.436 15.864 34 12.735 34 9a8 8 0 00-16.001 0c0 1.463.412 2.822 1.099 4H14.92c.047-.328.08-.66.08-1a7 7 0 10-14 0 6.995 6.995 0 004 6.317V29a4 4 0 004 4h15a4 4 0 004-4v-3h1.242l4.832 3H35V18h-.926zM28.727 3.977a5.713 5.713 0 012.984 4.961L28.18 8.35a2.276 2.276 0 00-.583-.982l1.13-3.391zm-.9 6.342l3.552.592a5.713 5.713 0 01-4.214 3.669 3.985 3.985 0 00-1.392-1.148l.625-2.19a2.425 2.425 0 001.429-.923zM26 3.285c.282 0 .557.027.828.067l-1.131 3.392c-.404.054-.772.21-1.081.446L21.42 5.592A5.703 5.703 0 0126 3.285zM20.285 9c0-.563.085-1.106.236-1.62l3.194 1.597-.002.023c0 .657.313 1.245.771 1.662L23.816 13h-1.871a5.665 5.665 0 01-1.66-4zm-9.088-.385A4.64 4.64 0 0112.667 12c0 .344-.043.677-.113 1H10.1c.145-.304.233-.641.233-1a2.32 2.32 0 00-.392-1.292l1.256-2.093zM8 7.333c.519 0 1.01.105 1.476.261L8.22 9.688c-.073-.007-.145-.022-.22-.022a2.32 2.32 0 00-1.292.392L4.615 8.803A4.64 4.64 0 018 7.333zM3.333 12c0-.519.105-1.01.261-1.477l2.095 1.257c-.007.073-.022.144-.022.22 0 .75.36 1.41.91 1.837a3.987 3.987 0 00-1.353 1.895C4.083 14.881 3.333 13.533 3.333 12z"
+                ></path>
+                <circle fill="#8899A6" cx="24" cy="19" r="2"></circle>
+                <circle fill="#8899A6" cx="9" cy="19" r="2"></circle>
+                <path
+                  fill="#8899A6"
+                  d="M24 27a2 2 0 00-2-2H11a2 2 0 00-2 2v6a2 2 0 002 2h11a2 2 0 002-2v-6z"
+                ></path>
+              </g>
+            </svg>
+            Videos
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <g class="nc-icon-wrapper">
+                <path
+                  fill="#FFD983"
+                  d="M36.017 24.181L21.345 9.746C20.687 9.087 19.823 9 18.96 9H8.883C7.029 9 6 10.029 6 11.883v10.082c0 .861.089 1.723.746 2.38L21.3 39.017a3.287 3.287 0 004.688 0l10.059-10.088c1.31-1.312 1.28-3.438-.03-4.748zm-23.596-8.76a1.497 1.497 0 11-2.118-2.117 1.497 1.497 0 012.118 2.117z"
+                ></path>
+                <path
+                  fill="#D99E82"
+                  d="M13.952 11.772a3.66 3.66 0 00-5.179 0 3.663 3.663 0 105.18 5.18 3.664 3.664 0 00-.001-5.18zm-1.53 3.65a1.499 1.499 0 11-2.119-2.12 1.499 1.499 0 012.119 2.12z"
+                ></path>
+                <path
+                  fill="#C1694F"
+                  d="M12.507 14.501a1 1 0 11-1.415-1.414l8.485-8.485a1 1 0 111.415 1.414l-8.485 8.485z"
+                ></path>
+              </g>
+            </svg>
+            Tags
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <g class="nc-icon-wrapper">
+                <path
+                  fill="#FFD983"
+                  d="M33 15.06c0 6.439-5 7.439-5 13.44 0 3.098-3.123 3.359-5.5 3.359-2.053 0-6.586-.779-6.586-3.361C15.914 22.5 11 21.5 11 15.06c0-6.031 5.285-10.92 11.083-10.92C27.883 4.14 33 9.029 33 15.06z"
+                ></path>
+                <path
+                  fill="#CCD6DD"
+                  d="M26.167 36.5c0 .828-2.234 2.5-4.167 2.5-1.933 0-4.167-1.672-4.167-2.5 0-.828 2.233-.5 4.167-.5 1.933 0 4.167-.328 4.167.5z"
+                ></path>
+                <path
+                  fill="#FFCC4D"
+                  d="M26.707 14.293a.999.999 0 00-1.414 0L22 17.586l-3.293-3.293a1 1 0 10-1.414 1.414L21 19.414V30a1 1 0 102 0V19.414l3.707-3.707a.999.999 0 000-1.414z"
+                ></path>
+                <path
+                  fill="#99AAB5"
+                  d="M28 35a2 2 0 01-2 2h-8a2 2 0 01-2-2v-6h12v6z"
+                ></path>
+                <path
+                  fill="#CCD6DD"
+                  d="M15.999 36a1 1 0 01-.163-1.986l12-2a.994.994 0 011.15.822.999.999 0 01-.822 1.15l-12 2a.927.927 0 01-.165.014zm0-4a1 1 0 01-.163-1.986l12-2a.995.995 0 011.15.822.999.999 0 01-.822 1.15l-12 2a.927.927 0 01-.165.014z"
+                ></path>
+              </g>
+            </svg>
+            FAQ
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <g class="nc-icon-wrapper">
+                <path
+                  fill="#F4900C"
+                  d="M15 4a8 8 0 00-8 8v8h2v-8a6 6 0 0112 0v8h2v-8a8 8 0 00-8-8z"
+                ></path>
+                <path
+                  fill="#DD2E44"
+                  d="M5 12l2 2 2-2 2 2 2-2 2 2 2-2 2 2 2-2 2 2 2-2v23H5z"
+                ></path>
+                <path
+                  fill="#FFCC4D"
+                  d="M29 9a8 8 0 00-8 8v8h2v-8a6 6 0 0112 0v8h2v-8a8 8 0 00-8-8z"
+                ></path>
+                <path
+                  fill="#744EAA"
+                  d="M19 17l2 2 2-2 2 2 2-2 2 2 2-2 2 2 2-2 2 2 2-2v23H19z"
+                ></path>
+              </g>
+            </svg>
+            Forem Shop
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <path
+                fill="#DD2E44"
+                d="M39.885 15.833c0-5.45-4.418-9.868-9.867-9.868-3.308 0-6.227 1.633-8.018 4.129-1.791-2.496-4.71-4.129-8.017-4.129-5.45 0-9.868 4.417-9.868 9.868 0 .772.098 1.52.266 2.241C5.751 26.587 15.216 35.568 22 38.034c6.783-2.466 16.249-11.447 17.617-19.959.17-.721.268-1.469.268-2.242z"
+              ></path>
+            </svg>
+            Sponsors
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              viewBox="0 0 235 234"
+              xmlns="http://www.w3.org/2000/svg"
+              class="rainbow-logo coso"
+              preserveAspectRatio="xMinYMin meet"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  fill="#88AEDC"
+                  d="M234.04 175.67l-75.69 58.28h47.18L234.04 212z"
+                ></path>
+                <path
+                  d="M234.04 140.06l-121.93 93.89h.02l121.91-93.87zM133.25.95L.04 103.51v.02L133.27.95z"
+                ></path>
+                <path
+                  fill="#F58F8E"
+                  fill-rule="nonzero"
+                  d="M.04.95v30.16L39.21.95z"
+                ></path>
+                <path
+                  fill="#FEE18A"
+                  fill-rule="nonzero"
+                  d="M39.21.95L.04 31.11v35.9L85.84.95z"
+                ></path>
+                <path
+                  fill="#F3F095"
+                  fill-rule="nonzero"
+                  d="M85.84.95L.04 67.01v36.5L133.25.95z"
+                ></path>
+                <path
+                  fill="#55C1AE"
+                  fill-rule="nonzero"
+                  d="M133.27.95L.04 103.53v35.59L179.49.95z"
+                ></path>
+                <path
+                  fill="#F7B3CE"
+                  fill-rule="nonzero"
+                  d="M234.04.95h-7.37L.04 175.45v35.93l234-180.18z"
+                ></path>
+                <path
+                  fill="#88AEDC"
+                  fill-rule="nonzero"
+                  d="M179.49.95L.04 139.12v36.33L226.67.95z"
+                ></path>
+                <path
+                  fill="#F58F8E"
+                  fill-rule="nonzero"
+                  d="M234.04 31.2L.04 211.38v22.57h18.03l215.97-166.3z"
+                ></path>
+                <path
+                  fill="#FEE18A"
+                  fill-rule="nonzero"
+                  d="M234.04 67.65L18.07 233.95H64.7l169.34-130.39z"
+                ></path>
+                <path
+                  fill="#F3F095"
+                  fill-rule="nonzero"
+                  d="M234.04 103.56L64.7 233.95h47.41l121.93-93.89z"
+                ></path>
+                <path
+                  fill="#55C1AE"
+                  fill-rule="nonzero"
+                  d="M234.04 140.08l-121.91 93.87h46.22l75.69-58.28z"
+                ></path>
+                <path
+                  fill="#F7B3CE"
+                  fill-rule="nonzero"
+                  d="M234.04 212l-28.51 21.95h28.51z"
+                ></path>
+                <path
+                  d="M65.237 77.75c4.514.95 7.774 2.8 11.135 6.3 3.059 3.2 4.965 6.85 5.767 10.95.652 3.45.652 40.55 0 44.05-1.705 9.1-9.479 16.2-19.109 17.45-2.006.25-8.727.5-14.845.5H37V77h12.438c8.828 0 13.342.2 15.8.75zM51.545 117v25.6l5.166-.2c4.464-.15 5.417-.35 7.423-1.5 3.912-2.3 3.962-2.45 3.962-24.2 0-21.2 0-21.2-3.661-23.6-1.806-1.2-2.558-1.35-7.473-1.55l-5.417-.15V117zm79.245-32.75v7.25h-25.58v18h15.549V124H105.21l.1 9.1.15 9.15 12.69.15 12.638.1V157h-14.795c-16.451 0-19.009-.3-21.617-2.6-3.661-3.2-3.46-1.15-3.611-36.3-.1-21.9.05-32.25.401-33.65.702-2.6 3.661-5.8 6.27-6.7 1.554-.55 5.466-.7 17.704-.75h15.648v7.25zm31.647 20.85c3.712 14.25 6.821 25.6 6.922 25.25.15-.35 3.31-12.4 7.071-26.85l6.872-26.25 7.824-.15c5.918-.1 7.874.05 7.874.5s-17.354 66.2-18.357 69.5c-.702 2.3-4.463 7-6.57 8.25-2.658 1.5-6.57 1.75-8.978.5-2.156-1.1-5.015-4.4-6.47-7.5-.902-1.9-15.648-56-19.058-70l-.352-1.35h7.825c7.673 0 7.874 0 8.275 1.1.2.65 3.41 12.8 7.122 27z"
+                  fill="#FFF"
+                ></path>
+              </g>
+            </svg>
+            About
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <g class="nc-icon-wrapper">
+                <path
+                  fill="#FFAC33"
+                  d="M38.724 33.656c-1.239-.01-1.241 1.205-1.241 1.205H22.5c-5.246 0-9.5-4.254-9.5-9.5s4.254-9.5 9.5-9.5 9.5 4.254 9.5 9.5c0 3.062-1.6 5.897-3.852 7.633h5.434C35.022 30.849 36 28.139 36 25.361c0-7.456-6.045-13.5-13.5-13.5-7.456 0-13.5 6.044-13.5 13.5 0 7.455 6.044 13.5 13.5 13.5h14.982s-.003 1.127 1.241 1.139c1.238.012 1.228-1.245 1.228-1.245l.014-3.821s.001-1.267-1.241-1.278zM9 18.26a16.047 16.047 0 014-4.739V13c0-5 5-7 5-8s-1-1-1-1H5C4 4 4 5 4 5c0 1 5 3.333 5 7.69v5.57z"
+                ></path>
+                <path
+                  fill="#BE1931"
+                  d="M17.091 33.166a9.487 9.487 0 01-4.045-8.72l-3.977-.461c-.046.452-.069.911-.069 1.376 0 4.573 2.28 8.608 5.76 11.051l2.331-3.246z"
+                ></path>
+                <path
+                  fill="#BE1931"
+                  d="M10 29.924s-5.188-.812-5 1 5-1 5-1zm0 .312s-4.125 2.688-2.938 3.75S10 30.236 10 30.236z"
+                ></path>
+              </g>
+            </svg>
+            Contact
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="coso mb-1 me-1"
+              xmlns:svg="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0 0 47.5 47.5"
+              style="enable-background: new 0 0 47.5 47.5"
+              id="svg2"
+              xml:space="preserve"
+            >
+              <defs id="defs6">
+                <clipPath id="clipPath18">
+                  <path d="M 0,38 38,38 38,0 0,0 0,38 z" id="path20"></path>
+                </clipPath>
+              </defs>
+              <g transform="matrix(1.25,0,0,-1.25,0,47.5)" id="g12">
+                <g id="g14">
+                  <g clip-path="url(#clipPath18)" id="g16">
+                    <g transform="translate(33,30)" id="g22">
+                      <path
+                        d="m 0,0 -28,0 c -2.209,0 -4,-1.791 -4,-4 l 0,-15 c 0,-2.209 1.791,-4 4,-4 l 11.416,0 c 0.52,-0.596 1.477,-1 2.584,-1 1.107,0 2.064,0.404 2.584,1 L 0,-23 c 2.209,0 4,1.791 4,4 L 4,-4 C 4,-1.791 2.209,0 0,0"
+                        id="path24"
+                        style="
+                          fill: #226699;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                      ></path>
+                    </g>
+                    <g transform="translate(21,10)" id="g26">
+                      <path
+                        d="m 0,0 c 0,-1.104 -0.896,-2 -2,-2 -1.104,0 -2,0.896 -2,2 l 0,18 c 0,1.104 0.896,2 2,2 1.104,0 2,-0.896 2,-2 L 0,0 z"
+                        id="path28"
+                        style="
+                          fill: #292f33;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                      ></path>
+                    </g>
+                    <g transform="translate(19,11)" id="g30">
+                      <path
+                        d="m 0,0 c 0,-1.104 -0.896,-2 -2,-2 l -12,0 c -1.104,0 -2,0.896 -2,2 l 0,18 c 0,1.104 0.896,2 2,2 l 12,0 c 1.104,0 2,-0.896 2,-2 L 0,0 z"
+                        id="path32"
+                        style="
+                          fill: #99aab5;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                      ></path>
+                    </g>
+                    <g transform="translate(19,11)" id="g34">
+                      <path
+                        d="m 0,0 c -0.999,1.998 -3.657,2 -4,2 -2,0 -5,-2 -8,-2 -1,0 -2,0.896 -2,2 l 0,16 c 0,1.104 1,2 2,2 3.255,0 6,2 8,2 3,0 4,-1.896 4,-3 L 0,0 z"
+                        id="path36"
+                        style="
+                          fill: #e1e8ed;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                      ></path>
+                    </g>
+                    <g transform="translate(35,11)" id="g38">
+                      <path
+                        d="m 0,0 c 0,-1.104 -0.896,-2 -2,-2 l -12,0 c -1.104,0 -2,0.896 -2,2 l 0,18 c 0,1.104 0.896,2 2,2 l 12,0 c 1.104,0 2,-0.896 2,-2 L 0,0 z"
+                        id="path40"
+                        style="
+                          fill: #99aab5;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                      ></path>
+                    </g>
+                    <g transform="translate(19,11)" id="g42">
+                      <path
+                        d="m 0,0 c 0.999,1.998 3.657,2 4,2 2,0 5,-2 8,-2 1,0 2,0.896 2,2 l 0,16 c 0,1.104 -1,2 -2,2 C 8.744,20 6,22 4,22 1,22 0,20.104 0,19 L 0,0 z"
+                        id="path44"
+                        style="
+                          fill: #ccd6dd;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            Guides
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="coso mb-1 me-1"
+              xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:cc="http://creativecommons.org/ns#"
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:svg="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 45 45"
+              style="enable-background: new 0 0 45 45"
+              xml:space="preserve"
+              version="1.1"
+              id="svg2"
+            >
+              <metadata id="metadata8">
+                <rdf:rdf
+                  ><cc:work rdf:about=""
+                    ><dc:format>image/svg+xml</dc:format
+                    ><dc:type
+                      rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+                    ></dc:type></cc:work
+                ></rdf:rdf>
+              </metadata>
+              <defs id="defs6">
+                <clipPath id="clipPath16" clipPathUnits="userSpaceOnUse">
+                  <path id="path18" d="M 0,36 36,36 36,0 0,0 0,36 Z"></path>
+                </clipPath>
+              </defs>
+              <g transform="matrix(1.25,0,0,-1.25,0,45)" id="g10">
+                <g id="g12">
+                  <g clip-path="url(#clipPath16)" id="g14">
+                    <g transform="translate(2,20)" id="g20">
+                      <path
+                        id="path22"
+                        style="
+                          fill: #ffcc4d;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                        d="m 0,0 c 0,-8.837 7.164,-16 16,-16 8.837,0 16,7.163 16,16 C 32,8.836 24.837,16 16,16 7.164,16 0,8.836 0,0"
+                      ></path>
+                    </g>
+                    <g transform="translate(15.4063,25.5)" id="g24">
+                      <path
+                        id="path26"
+                        style="
+                          fill: #664500;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                        d="m 0,0 c 0,-1.381 -0.896,-2.5 -2,-2.5 -1.104,0 -2,1.119 -2,2.5 0,1.38 0.896,2.5 2,2.5 1.104,0 2,-1.12 2,-2.5"
+                      ></path>
+                    </g>
+                    <g transform="translate(26,24.5)" id="g28">
+                      <path
+                        id="path30"
+                        style="
+                          fill: #664500;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                        d="m 0,0 c 0,-1.381 -0.895,-2.5 -2,-2.5 -1.104,0 -2,1.119 -2,2.5 0,1.38 0.896,2.5 2,2.5 1.105,0 2,-1.12 2,-2.5"
+                      ></path>
+                    </g>
+                    <g transform="translate(9.6709,29.667)" id="g32">
+                      <path
+                        id="path34"
+                        style="
+                          fill: #664500;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                        d="M 0,0 C -0.164,0.087 -0.303,0.223 -0.391,0.398 -0.607,0.827 -0.431,1.325 0.002,1.511 4.268,3.341 7.701,1.554 7.845,1.477 8.278,1.246 8.453,0.729 8.236,0.323 8.02,-0.082 7.496,-0.223 7.063,0.005 6.94,0.069 4.231,1.437 0.785,-0.042 0.528,-0.151 0.238,-0.127 0,0"
+                      ></path>
+                    </g>
+                    <g transform="translate(14.7427,16.4277)" id="g36">
+                      <path
+                        id="path38"
+                        style="
+                          fill: #664500;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                        d="M 0,0 C -0.136,0.127 -0.236,0.293 -0.276,0.486 -0.375,0.955 -0.078,1.392 0.389,1.46 4.981,2.138 7.841,-0.469 7.962,-0.58 8.322,-0.914 8.357,-1.457 8.044,-1.795 7.732,-2.131 7.189,-2.133 6.83,-1.801 6.726,-1.709 4.458,0.307 0.748,-0.24 0.471,-0.281 0.197,-0.184 0,0"
+                      ></path>
+                    </g>
+                    <g transform="translate(20.4307,25.917)" id="g40">
+                      <path
+                        id="path42"
+                        style="
+                          fill: #664500;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                        d="M 0,0 C -0.156,0.098 -0.286,0.243 -0.362,0.424 -0.549,0.866 -0.339,1.352 0.105,1.508 4.486,3.044 7.79,1.028 7.929,0.941 8.344,0.681 8.483,0.154 8.24,-0.237 7.998,-0.627 7.464,-0.732 7.049,-0.475 6.929,-0.402 4.321,1.146 0.782,-0.095 0.518,-0.187 0.23,-0.143 0,0"
+                      ></path>
+                    </g>
+                    <g transform="translate(17.2764,0.8682)" id="g44">
+                      <path
+                        id="path46"
+                        style="
+                          fill: #f4900c;
+                          fill-opacity: 1;
+                          fill-rule: nonzero;
+                          stroke: none;
+                        "
+                        d="m 0,0 c 0,0 1.265,0.411 1.429,1.352 0.173,0.971 -0.624,1.167 -0.624,1.167 0,0 1.041,0.208 1.172,1.376 0.123,1.1 -0.862,1.363 -0.862,1.363 0,0 0.97,0.4 1.016,1.539 0.038,0.959 -0.995,1.428 -0.995,1.428 0,0 5.038,1.22 5.555,1.34 0.516,0.121 1.321,0.616 1.07,1.695 -0.249,1.08 -1.204,1.118 -1.698,1.003 -0.494,-0.116 -6.744,-1.567 -8.9,-2.069 -0.23,-0.053 -1.308,-0.302 -1.439,-0.334 -0.54,-0.127 -0.785,0.111 -0.405,0.512 0.509,0.536 0.833,1.129 0.947,2.113 0.119,1.036 -0.232,2.314 -0.433,2.809 -0.374,0.921 -1.005,1.649 -1.734,1.899 -1.138,0.39 -1.946,-0.321 -1.542,-1.561 0.604,-1.855 0.209,-3.375 -0.833,-4.293 -2.449,-2.157 -3.589,-3.695 -2.83,-6.973 0.827,-3.575 4.377,-5.876 7.952,-5.048 C -2.965,-0.64 0,0 0,0"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            Software Comparisons
+          </button>
+        </div>
+        <p class="fw-bold ms-3 mt-2">Other</p>
+        <div
+          class="card btn-group-vertical"
+          role="group"
+          aria-label="Vertical button group"
+        >
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <g class="nc-icon-wrapper">
+                <path
+                  fill="#FFDB5E"
+                  d="M38.956 21.916c0-.503-.12-.975-.321-1.404-1.341-4.326-7.619-4.01-16.549-4.221-1.493-.035-.639-1.798-.115-5.668.341-2.517-1.282-6.382-4.01-6.382-4.498 0-.171 3.548-4.148 12.322-2.125 4.688-6.875 2.062-6.875 6.771v10.719c0 1.833.18 3.595 2.758 3.885 2.499.281 1.937 2.062 5.542 2.062h18.044a3.337 3.337 0 003.333-3.334c0-.762-.267-1.456-.698-2.018 1.02-.571 1.72-1.649 1.72-2.899 0-.76-.266-1.454-.696-2.015 1.023-.57 1.725-1.649 1.725-2.901 0-.909-.368-1.733-.961-2.336a3.311 3.311 0 001.251-2.581z"
+                ></path>
+                <path
+                  fill="#EE9547"
+                  d="M27.02 25.249h8.604c1.17 0 2.268-.626 2.866-1.633a.876.876 0 00-1.506-.892 1.588 1.588 0 01-1.361.775h-8.81c-.873 0-1.583-.71-1.583-1.583s.71-1.583 1.583-1.583H32.7a.875.875 0 000-1.75h-5.888a3.337 3.337 0 00-3.333 3.333c0 1.025.475 1.932 1.205 2.544a3.32 3.32 0 00-.998 2.373c0 1.028.478 1.938 1.212 2.549a3.318 3.318 0 00.419 5.08 3.305 3.305 0 00-.852 2.204 3.337 3.337 0 003.333 3.333h5.484a3.35 3.35 0 002.867-1.632.875.875 0 00-1.504-.894 1.594 1.594 0 01-1.363.776h-5.484c-.873 0-1.583-.71-1.583-1.583s.71-1.583 1.583-1.583h6.506a3.35 3.35 0 002.867-1.633.875.875 0 10-1.504-.894 1.572 1.572 0 01-1.363.777h-7.063a1.585 1.585 0 010-3.167h8.091a3.35 3.35 0 002.867-1.632.875.875 0 00-1.504-.894 1.573 1.573 0 01-1.363.776H27.02a1.585 1.585 0 010-3.167z"
+                ></path>
+              </g>
+            </svg>
+            Code of Conduct
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <g transform="translate(4 4)">
+                <circle fill="#FFCC4D" cx="18" cy="18" r="18"></circle>
+                <path
+                  fill="#664500"
+                  d="M27.335 23.629a.501.501 0 00-.635-.029c-.039.029-3.922 2.9-8.7 2.9-4.766 0-8.662-2.871-8.7-2.9a.5.5 0 10-.729.657C8.7 24.472 11.788 29.5 18 29.5s9.301-5.028 9.429-5.243a.499.499 0 00-.094-.628z"
+                ></path>
+                <path
+                  fill="#65471B"
+                  d="M18 26.591c-.148 0-.291-.011-.438-.016v4.516h.875v-4.517c-.145.005-.289.017-.437.017z"
+                ></path>
+                <path
+                  fill="#FFF"
+                  d="M22 26c.016-.004-1.45.378-2.446.486-.366.042-.737.076-1.117.089v4.517H20c1.1 0 2-.9 2-2V26zm-8 0c-.016-.004 1.45.378 2.446.486.366.042.737.076 1.117.089v4.517H16c-1.1 0-2-.9-2-2V26z"
+                ></path>
+                <path
+                  fill="#65471B"
+                  d="M27.335 23.629a.501.501 0 00-.635-.029c-.03.022-2.259 1.668-5.411 2.47-.443.113-1.864.43-3.286.431-1.424 0-2.849-.318-3.292-.431-3.152-.802-5.381-2.448-5.411-2.47a.501.501 0 00-.729.657c.097.162 1.885 3.067 5.429 4.481v-1.829c-.016-.004 1.45.378 2.446.486.366.042.737.076 1.117.089.146.005.289.016.437.016.148 0 .291-.011.438-.016.38-.013.751-.046 1.117-.089.996-.108 2.462-.49 2.446-.486v1.829c3.544-1.414 5.332-4.319 5.429-4.481a.5.5 0 00-.095-.628zm-.711-9.605c0 1.714-.938 3.104-2.096 3.104-1.157 0-2.096-1.39-2.096-3.104s.938-3.104 2.096-3.104c1.158 0 2.096 1.39 2.096 3.104zm-17.167 0c0 1.714.938 3.104 2.096 3.104 1.157 0 2.096-1.39 2.096-3.104s-.938-3.104-2.096-3.104c-1.158 0-2.096 1.39-2.096 3.104z"
+                ></path>
+                <path
+                  fill="#292F33"
+                  d="M34.808 9.627c-.171-.166-1.267.274-2.376-.291-2.288-1.166-8.07-2.291-11.834.376-.403.285-2.087.333-2.558.313-.471.021-2.155-.027-2.558-.313-3.763-2.667-9.545-1.542-11.833-.376-1.109.565-2.205.125-2.376.291-.247.239-.247 1.196.001 1.436.246.239 1.477.515 1.722 1.232.247.718.249 4.958 2.213 6.424 1.839 1.372 6.129 1.785 8.848.238 2.372-1.349 2.289-4.189 2.724-5.881.155-.603.592-.907 1.26-.907s1.105.304 1.26.907c.435 1.691.351 4.532 2.724 5.881 2.719 1.546 7.009 1.133 8.847-.238 1.965-1.465 1.967-5.706 2.213-6.424.245-.717 1.476-.994 1.722-1.232.248-.24.249-1.197.001-1.436zm-20.194 3.65c-.077 1.105-.274 3.227-1.597 3.98-.811.462-1.868.743-2.974.743h-.001c-1.225 0-2.923-.347-3.587-.842-.83-.619-1.146-3.167-1.265-4.12-.076-.607-.28-2.09.388-2.318 1.06-.361 2.539-.643 4.052-.643.693 0 3.021.043 4.155.741 1.005.617.872 1.851.829 2.459zm16.278-.253c-.119.954-.435 3.515-1.265 4.134-.664.495-2.362.842-3.587.842h-.001c-1.107 0-2.163-.281-2.975-.743-1.323-.752-1.52-2.861-1.597-3.966-.042-.608-.176-1.851.829-2.468 1.135-.698 3.462-.746 4.155-.746 1.513 0 2.991.277 4.052.638.668.228.465 1.702.389 2.309z"
+                ></path>
+              </g>
+            </svg>
+            Privacy Policy
+          </button>
+          <button type="button" class="text-start btn btn-primary">
+            <svg
+              class="mb-1 me-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 44 44"
+              width="24"
+              height="24"
+            >
+              <g transform="translate(4 4)">
+                <ellipse
+                  fill="#F5F8FA"
+                  cx="8.828"
+                  cy="18"
+                  rx="7.953"
+                  ry="13.281"
+                ></ellipse>
+                <path
+                  fill="#E1E8ED"
+                  d="M8.828 32.031C3.948 32.031.125 25.868.125 18S3.948 3.969 8.828 3.969 17.531 10.132 17.531 18s-3.823 14.031-8.703 14.031zm0-26.562C4.856 5.469 1.625 11.09 1.625 18s3.231 12.531 7.203 12.531S16.031 24.91 16.031 18 12.8 5.469 8.828 5.469z"
+                ></path>
+                <circle fill="#8899A6" cx="6.594" cy="18" r="4.96"></circle>
+                <circle fill="#292F33" cx="6.594" cy="18" r="3.565"></circle>
+                <circle
+                  fill="#F5F8FA"
+                  cx="7.911"
+                  cy="15.443"
+                  r="1.426"
+                ></circle>
+                <ellipse
+                  fill="#F5F8FA"
+                  cx="27.234"
+                  cy="18"
+                  rx="7.953"
+                  ry="13.281"
+                ></ellipse>
+                <path
+                  fill="#E1E8ED"
+                  d="M27.234 32.031c-4.88 0-8.703-6.163-8.703-14.031s3.823-14.031 8.703-14.031S35.938 10.132 35.938 18s-3.824 14.031-8.704 14.031zm0-26.562c-3.972 0-7.203 5.622-7.203 12.531 0 6.91 3.231 12.531 7.203 12.531S34.438 24.91 34.438 18 31.206 5.469 27.234 5.469z"
+                ></path>
+                <circle fill="#8899A6" cx="25" cy="18" r="4.96"></circle>
+                <circle fill="#292F33" cx="25" cy="18" r="3.565"></circle>
+                <circle
+                  fill="#F5F8FA"
+                  cx="26.317"
+                  cy="15.443"
+                  r="1.426"
+                ></circle>
+              </g>
+            </svg>
+            Terms of use
+          </button>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-twitter"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                />
+              </svg>
+            </button>
+            <button type="button" class="btn btn-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+              </svg>
+            </button>
+            <button type="button" class="btn btn-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-github"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+            </button>
+            <button type="button" class="btn btn-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+            </button>
+            <button type="button" class="btn btn-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-twitch"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"
+                />
+                <path
+                  d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="mt-2 d-flex justify-content-between">
+          <p class="fw-bold ms-3 mt-3">My Tags</p>
+          <button type="button" class="btn btn-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              class="crayons-icon"
+            >
+              <path
+                d="M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11L12 1zm0 2.311L4.5 7.653v8.694l7.5 4.342 7.5-4.342V7.653L12 3.311zM12 16a4 4 0 110-8 4 4 0 010 8zm0-2a2 2 0 100-4 2 2 0 000 4z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="card mt-2">
+          <p>
+            <img
+              id="wa_img"
+              src="https://res.cloudinary.com/practicaldev/image/fetch/s--fIs7T4ga--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://jess.forem.lol/remoteimages/uploads/articles/9ga7i09w99yubqm4fxrv.png"
+              alt=""
+            />
+          </p>
+          <p class="fw-bold">
+            Calling all early-career developers & coding mentors!
+          </p>
+          <p>
+            Join CodeNewbie Community: a supportive space for coding newbies to
+            connect & express themselves.
+          </p>
+        </div>
+        <div class="card mt-2">
+          <p>
+            <img
+              id="wa_img"
+              src="https://res.cloudinary.com/practicaldev/image/fetch/s--vf_P4FwD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://p32.f1.n0.cdn.getcloudapp.com/items/OAu6mnD1/20ada628-9434-4772-a8e0-7d861713d3c4.jpg"
+              alt=""
+            />
+          </p>
+          <p class="fw-bold">The Forem Shop is Here!</p>
+          <p>>> Shop Forem, DEV, and CodeNewbie merch</p>
+        </div>
+      </aside>
+      <!-- Main Content -->
+      <main class="col-5 mx-2 bg-info">
+        <div class="d-flex justify-content-start">
+          <button type="button" class="btn btn-outline-primary">
+            Relevant
+          </button>
+          <button type="button" class="btn btn-outline-primary">Latest</button>
+          <button type="button" class="btn btn-outline-primary">Top</button>
+        </div>
+        <div class="card">
+          <img
+          class="card-img-top"
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--UpX83H3C--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yutqst8ujn9yyen2wq6e.png"
+            alt=""
+          />
+          <div class="d-flex justify-content-start">
+            <img
+              class="mt-2 ms-3 me-1"
+              id="imgPerfil"
+              src="./assets/perfil.jpg"
+              alt=""
+            />
+            <div>
+              <p class="m-0">Fredy Andrei</p>
+              <p class="m-0">Oct 1 (22 hours ago)</p>
+            </div>
+          </div>
+          <div class="fw-bold ms-5">
+            Hacktoberfest is here — and this is the lowdown
+          </div>
+          <div class="d-flex flex-row ms-5">
+            <button type="button" class="px-1 py-1 btn btn-outline-primary">
+              #showdev
+            </button>
+            <button type="button" class="px-1 py-1 btn btn-outline-primary">
+              #typescript
+            </button>
+            <button type="button" class="px-1 py-1 btn btn-outline-primary">
+              #webdev
+            </button>
+            <button type="button" class="px-1 py-1 btn btn-outline-primary">
+              #react
+            </button>
+          </div>
+          <div class="d-flex flex-row justify-content-between ms-5">
+            <div class="d-flex flex-row">
+              <button
+                type="button"
+                class="px-1 py-1 btn btn-outline-primary mx-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-balloon-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721L8 2.42Zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063.045.041.089.084.132.129.043-.045.087-.088.132-.129 3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398Z"
+                  />
+                </svg>
+                Reactions
+              </button>
+              <button
+                type="button"
+                class="px-1 py-1 btn btn-outline-primary mx-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chat"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"
+                  />
+                </svg>
+                Comments
+              </button>
+            </div>
+            <div class="d-flex flex-row ms-5">
+              <button
+                type="button"
+                class="px-1 py-1 btn btn-outline-primary mx-0"
+              >
+                1 min read
+              </button>
+              <button
+                type="button"
+                class="px-1 py-1 btn btn-outline-primary mx-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-flag"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Right Aside -->
+      <aside class="col bg-info">Derecho</aside>
+    </section>
+    <!-- Footer -->
+    <footer class="container-fluid py-4 mt-4 text-center" id="fondo">
+      <p>
+        <a href="https://dev.to/">Community 👩‍💻👨‍💻 </a>— A constructive and
+        inclusive social network for software developers. With you every step of
+        your journey.
+      </p>
+      <p>
+        Built on Forem — the open source software that powers DEV and other
+        inclusive communities.
+      </p>
+      <p>Made with love and Ruby on Rails. DEV Community 👩‍💻👨‍💻 © 2016 - 2022.</p>
+      <!-- Sheet in footer -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        role="img"
+        aria-labelledby="aaazut3ljuawluo10mpq98g9iy0rd8y5"
+        class="crayons-icon crayons-icon--default c-link__icon"
+      >
+        <title id="aaazut3ljuawluo10mpq98g9iy0rd8y5">Forem logo</title>
+        <g clip-path="url(#clip0)" fill="#1AB3A6">
+          <path
+            d="M4.603 1.438a8.056 8.056 0 017.643 5.478 8.543 8.543 0 00-3.023 5.968H8.054C3.606 12.884 0 9.296 0 4.87V1.468a.03.03 0 01.03-.03h4.573zM23.97 6.515a.03.03 0 01.03.03v2.833c0 4.11-3.354 7.442-7.491 7.442h-2.881v5.726h-2.305V14.53l.022-1.145c.294-3.843 3.526-6.87 7.469-6.87h5.155z"
+          ></path>
+        </g>
+        <defs>
+          <clipPath id="clip0">
+            <path fill="#fff" d="M0 0h24v24H0z"></path>
+          </clipPath>
+        </defs>
+      </svg>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
