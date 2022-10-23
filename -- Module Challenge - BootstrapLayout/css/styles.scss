@@ -1,0 +1,71 @@
+$backGroundColor: #FFFFFF;
+$grayBackground: #E5E5E5;
+$textColorInHover: #3B49DF;
+
+#contenido {
+    background-color: $backGroundColor;
+}
+
+footer {
+    background-color: $grayBackground;
+}
+
+.coso{
+    width: 17px;
+    height: 17px;
+    margin-left: 3px;
+    margin-right: 6px;
+}
+
+#wa_img{
+    width: 100%;
+}
+
+#logoDev{
+    width: 50px;
+    height: 40px;
+}
+
+#imgPerfil{
+    width: 30x;
+    height: 30px;
+    border-radius: 150px;
+}
+
+#imgProfile{
+    width: 500px;
+    
+}
+
+.btn-vryahn{
+    background-color: yellow !important;
+    hover: {
+        background-color: green !important;
+    }
+}
+
+
+// --- Right Aside CSS ---
+
+.btn-rightAside{
+    background-color: white;
+}
+
+.rightCard{
+    background-color: grey;
+    :hover{
+        color:$textColorInHover;
+        background-color: $backGroundColor;
+    }
+}
+
+.blueText{
+    color: $textColorInHover;
+}
+
+.greyText{
+    color: grey;
+    :hover{
+        color: grey !important;
+    }
+}
