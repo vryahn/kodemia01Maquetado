@@ -37,6 +37,35 @@ footer {
     
 }
 
+.btn-vryahn{
+    background-color: yellow !important;
+    hover: {
+        background-color: green !important;
+    }
+}
+
 
 // --- Right Aside CSS ---
 
+.btn-rightAside{
+    background-color: white;
+}
+
+.rightCard{
+    background-color: grey;
+    :hover{
+        color:$textColorInHover;
+        background-color: $backGroundColor;
+    }
+}
+
+.blueText{
+    color: $textColorInHover;
+}
+
+.greyText{
+    color: grey;
+    :hover{
+        color: grey !important;
+    }
+}

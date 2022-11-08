@@ -1,12 +1,3 @@
-/* // Custom.scss
-// Opción A: Incluir todo Bootstrap
-
-// Incluye cualquier sobrescritura de variable predeterminada aquí (aunque las funciones no estarán disponibles) */
-
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-/* // Luego agrega código personalizado adicional aquí */
-
 #contenido {
   background-color: #FFFFFF;
 }
@@ -39,4 +30,32 @@ footer {
 
 #imgProfile {
   width: 500px;
+}
+
+.btn-vryahn {
+  background-color: yellow !important;
+  hover-background-color: green !important;
+}
+
+.btn-rightAside {
+  background-color: white;
+}
+
+.rightCard {
+  background-color: grey;
+}
+.rightCard :hover {
+  color: #3B49DF;
+  background-color: #FFFFFF;
+}
+
+.blueText {
+  color: #3B49DF;
+}
+
+.greyText {
+  color: grey;
+}
+.greyText :hover {
+  color: grey !important;
 }/*# sourceMappingURL=styles.css.map */
